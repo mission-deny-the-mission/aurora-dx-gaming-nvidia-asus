@@ -7,7 +7,7 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-40}"
 ARG KERNEL_FLAVOR="${KERNEL_FLAVOR:-fsync}"
 
-ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME:aurora}"
+ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME:-aurora}"
 ARG BASE_IMAGE_FLAVOR="${BASE_IMAGE_FLAVOR:-dx-asus-nvidia}"
 
 # SOURCE_IMAGE arg can be anything from ublue upstream which matches your desired version:
