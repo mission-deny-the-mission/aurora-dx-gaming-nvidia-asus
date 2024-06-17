@@ -4,6 +4,12 @@
 # Build args can be provided on the commandline when building locally with:
 #   podman build -f Containerfile --build-arg FEDORA_VERSION=40 -t local-image
 
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-40}"
+ARG KERNEL_FLAVOR="${KERNEL_FLAVOR:-fsync}"
+
+ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME:aurora}"
+ARG BASE_IMAGE_FLAVOR="${BASE_IMAGE_FLAVOR:-dx-asus-nvidia}"
+
 # SOURCE_IMAGE arg can be anything from ublue upstream which matches your desired version:
 # See list here: https://github.com/orgs/ublue-os/packages?repo_name=main
 # - "silverblue"
